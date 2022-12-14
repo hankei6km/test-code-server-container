@@ -2,6 +2,8 @@
 
 VSCode の [Remote Tunels](https://code.visualstudio.com/docs/remote/tunnels) をコンテナで動かすテスト。
 
+詳細: [VSCode の Remote Tunnels で「いつもの開発環境へ」お手軽リモート接続](https://zenn.dev/hankei6km/articles/connect-my-machine-via-vscode-remote-tunne)
+
 ## ビルド
 
 ```sh
