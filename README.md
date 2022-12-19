@@ -21,7 +21,7 @@ $ docker run -it -u vscode -v "${PWD}/vscode-cli:/home/vscode/.vscode-cli" \
 ```
 
 
-## Dubs(Keyring)を有効化
+## DBus(Keyring)を有効化
 
 `./image_dbus` は DBus と gnome-Keyring-daemono を有効化した状態のイメージを作成できる。
 
