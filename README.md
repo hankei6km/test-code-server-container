@@ -17,10 +17,9 @@ $ mkdir vscode-cli vscode-server Documents
 $ docker run -it -u vscode -v "${PWD}/vscode-cli:/home/vscode/.vscode-cli" \
     -v "${PWD}/vscode-server:/home/vscode/.vscode-server" \
     -v "${PWD}/Documents:/home/vscode/Documents" \
-    --name vscode-tunnel  vscode-tunnel:latest
+    --name vscode-tunnel --hostname vscode-tunnel vscode-tunnel:latest
 ```
 
-コンテナを再作成すると資格情報(GitHub 接続の許可)は失われるでの再度許可が必要。
 
 ## Dubs(Keyring)を有効化
 
@@ -35,7 +34,5 @@ $ docker run -it -u vscode -v "${PWD}/vscode-cli:/home/vscode/.vscode-cli" \
     -v "${PWD}/vscode-server:/home/vscode/.vscode-server" \
     -v "${PWD}/Documents:/home/vscode/Documents" \
      -v "${PWD}/keyrings:/home/vscode/.local/share/keyrings \
-    --name vscode-tunnel  vscode-tunnel:latest
+    --name vscode-tunnel --hostname vscode-tunnel vscode-tunnel:latest
 ```
-
-また、これでもコンテナを再作成すると再度許可が必要になる。
